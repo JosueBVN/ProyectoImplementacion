@@ -129,9 +129,9 @@ int main(){
     while(syn!=0){ // Salida binaria
         Scanner(syn,pProject,token,projectResorce);
         if(syn==99){
-            cout<<"<constante,"<<token<<">"<<endl;
+            cout<<"constante,"<<token<<endl;
         }else if(syn==100){
-            cout<<"<identificador,"<<token<<">"<<endl;
+            cout<<"identificador,"<<token<<endl;
         }else if(syn>=1&&syn<=71){
             cout<<"<"<<token<<",-->  ("<<syn<<")"<<endl;
         }else if(syn==-1){
