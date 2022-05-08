@@ -401,7 +401,7 @@ void isOperador(NodoD<string>* tipoToken,int &contador,ofstream &archivo){
 
 }
 void isComentario(NodoD<string>* tipoToken,int &contador,ofstream &archivo){
-    archivo<<".tok"+to_string(contador)+"{color:yellow;}\n";
+    archivo<<".tok"+to_string(contador)+"{color:gray;}\n";
     contador++;
     cout<<tipoToken->getDato()<<endl;
 }
@@ -473,7 +473,7 @@ void generarVerificador(string archivo,string archivo2, ListaDoble<string>*Token
             cout<<buscandoToken1->getDato()<<endl;
             buscandoToken1=buscandoToken1->getSiguiente();
             if(buscandoToken1->getDato()=="Entero"||buscandoToken1->getDato()=="Real"||buscandoToken1->getDato()=="Variable"){
-                miverificador<<".tok"+to_string(contadorSimbolo)+"{color:blue;}\n";
+                miverificador<<".tok"+to_string(contadorSimbolo)+"{color:brown;}\n";
                 contadorSimbolo++;
                 cout<<buscandoToken1->getDato()<<endl;
                 buscandoToken1=buscandoToken1->getSiguiente();
